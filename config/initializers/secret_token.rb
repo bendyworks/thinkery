@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-NotSuckCms::Application.config.secret_token = 'a3c8f5a1f7c58501f77cc5fb8179f2ee12228997281c70d65f05b9973af1f24ac6da36d9384ec50e3ad39aa6a100b19713b34c91418070cd94329cedd086a1a4'
+NotSuckCms::Application.config.secret_token = 'ed83738ac3f3784af07ec88c69cdbdec6e0890ead1da0a3204f10a47d0bb8ff7a6e9c1e55d5f2fa493999a0aa24df7da496a32c09ef0b5c42fe2e4696e23d355'

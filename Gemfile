@@ -5,8 +5,8 @@ gem 'rails', '3.2.8'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'jquery-rails'
 gem 'pg'
-
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -21,7 +21,9 @@ group :assets do
 end
 
 group :test, :development do
+  gem 'debugger'
   gem "rspec-rails", "~> 2.0"
+  gem 'factory_girl_rails'
 end
 
 group :test do
@@ -30,8 +32,6 @@ group :test do
   gem 'database_cleaner'
   gem 'shoulda-matchers'
 end
-
-gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -44,6 +44,3 @@ gem 'jquery-rails'
 
 # Deploy with Capistrano
 # gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'

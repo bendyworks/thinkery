@@ -1,3 +1,3 @@
 Given /^"(.*?)" resource$/ do |path|
-  Resource.create!
+  FactoryGirl.create :resource, path: path
 end

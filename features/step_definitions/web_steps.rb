@@ -1,3 +1,3 @@
-Then /^I should see "(.*?)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+Then /^I should see "(.*?)"$/ do |desired_content|
+  page.should have_content(desired_content)
 end

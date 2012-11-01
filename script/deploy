@@ -22,10 +22,7 @@ else
 fi
 
 echo "Running db:migrate for ${APP_NAME} on heroku"
-heroku rake db:migrate --app $APP_NAME
-
-echo "Clearing jobs on heroku"
-heroku rake jobs:clear --app $APP_NAME
+heroku run rake db:migrate --app $APP_NAME
 
 echo "restarting ${APP_NAME} on heroku"
 heroku restart --app $APP_NAME

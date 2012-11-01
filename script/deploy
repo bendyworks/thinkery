@@ -5,14 +5,21 @@ ENVIRONMENT=$1
 export RAILS_ENV=$1
 OLD_ENV=$(git remote -v | sed -e '/origin/d' -e '/push/d' -e 's/^.*-//' -e 's/\.git.*$//')
 
+function title {
+  message=$1
+  echo
+  echo "== $message =="
+  echo
+}
+
 if [ "$ENVIRONMENT" != "production" ]; then
   if [ "$ENVIRONMENT" != "staging" ]; then
-    echo "Usage: ./script/deploy (staging|production)"
+    title "Usage: ./script/deploy (staging|production)"
     exit 1
   fi
 fi
 
-echo "Pushing to ${ENVIRONMENT} heroku remote"
+title "Pushing to $ENVIRONMENT heroku remote"
 if [ "$ENVIRONMENT" == "staging" ]; then
   git push -f staging develop:master
   APP_NAME=not-suck-cms-staging
@@ -21,11 +28,11 @@ else
   APP_NAME=not-suck-cms
 fi
 
-echo "Running db:migrate for ${APP_NAME} on heroku"
+title "Running db:migrate for $APP_NAME on heroku"
 heroku run rake db:migrate --app $APP_NAME
 
-echo "restarting ${APP_NAME} on heroku"
+title "restarting $APP_NAME on heroku"
 heroku restart --app $APP_NAME
 
-echo "hitting #{APP_NAME} to wake it"
+title "hitting $APP_NAME to wake it"
 curl "http://${APP_NAME}.heroku.com" &> /dev/null &

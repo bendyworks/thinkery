@@ -1,5 +1,5 @@
 NotSuckCms::Application.routes.draw do
-  resources :resources, only: :index
+  resources :resources, only: [:index, :new]
   root :to => 'resources#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.

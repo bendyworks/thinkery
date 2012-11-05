@@ -1,7 +1,7 @@
 Feature: Reader Views Site Index
   As a reader
   In order to know what resources the CMS is managing
-  I want to view the index of all resource paths
+  I want to view the list of all resource paths
 
   Scenario: Reader Views Site Index
     Given "/meetups" resource

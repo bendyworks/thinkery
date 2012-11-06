@@ -9,6 +9,4 @@ Feature: Editor creates resource
     When I fill in "Path" with "/sample"
       And I fill in "Content" with "Grapefruit"
       And I press "Create Resource"
-    Then a "/sample" resource exists with content "Grapefruit"
-
-
+    Then a "/sample" resource should exist with content "Grapefruit"

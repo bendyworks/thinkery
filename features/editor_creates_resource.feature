@@ -8,7 +8,7 @@ Feature: Editor creates resource
       And I follow "Add Resource"
     When I fill in "Path" with "/sample"
       And I fill in "Content" with "Grapefruit"
-      And I press "Save"
+      And I press "Create Resource"
     Then a "/sample" resource exists with content "Grapefruit"
 
 

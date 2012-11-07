@@ -3,7 +3,6 @@
 set -e
 ENVIRONMENT=$1
 export RAILS_ENV=$1
-OLD_ENV=$(git remote -v | sed -e '/origin/d' -e '/push/d' -e 's/^.*-//' -e 's/\.git.*$//')
 
 function title {
   message=$1

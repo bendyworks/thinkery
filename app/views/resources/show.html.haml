@@ -1,6 +1,8 @@
 %dl
   %dt
     %dfn
-      =@resource.path
+      = @resource.path
   %dd
-    =@resource.content
+    = @resource.content
+%p
+  = link_to 'Edit', edit_resource_path(@resource)

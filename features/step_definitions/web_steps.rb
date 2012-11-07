@@ -17,3 +17,8 @@ end
 When /^I press "(.*?)"$/ do |button_text|
   click_button button_text
 end
+
+When /^I debug$/ do
+  debugger
+  true
+end

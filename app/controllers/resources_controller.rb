@@ -1,10 +1,11 @@
 class ResourcesController < ApplicationController
+  before_filter :find_resource_by_id, only: [:show, :edit, :update, :destroy]
+
   def index
     @resources = Resource.all
   end
 
   def show
-    @resource = Resource.find(params[:id])
   end
 
   def new
@@ -12,7 +13,6 @@ class ResourcesController < ApplicationController
   end
 
   def edit
-    @resource = Resource.find(params[:id])
   end
 
   def create
@@ -25,7 +25,6 @@ class ResourcesController < ApplicationController
   end
 
   def update
-    @resource = Resource.find(params[:id])
     if @resource.update_attributes (params[:resource])
       redirect_to @resource, notice: 'Resource successfully updated'
     else
@@ -34,11 +33,15 @@ class ResourcesController < ApplicationController
   end
 
   def destroy
-    @resource = Resource.find(params[:id])
     if @resource.delete
       redirect_to resources_path, notice: 'Resource successfully deleted'
     else
       render :edit
     end
+  end
+
+  private
+  def find_resource_by_id
+    @resource = Resource.find(params[:id])
   end
 end

@@ -1,0 +1,8 @@
+- if notice.present?
+  .flash.notice
+    %p
+      = notice
+- if alert.present?
+  .flash.error
+    %p
+      = alert

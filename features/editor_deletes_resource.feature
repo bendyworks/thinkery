@@ -10,4 +10,3 @@ Feature: Editor Deletes Resource
     Then the "/sacrifice" resource should not exist
       And I should be on the "Site Index" page
       And I should not see "/sacrifice"
-

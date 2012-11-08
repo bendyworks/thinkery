@@ -1,5 +1,5 @@
 NotSuckCms::Application.routes.draw do
-  resources :resources, except: [:delete]
+  resources :resources
   root :to => 'resources#index'
 
   # The priority is based upon order of creation:

@@ -2,6 +2,10 @@ Then /^I should see "(.*?)"$/ do |desired_content|
   page.should have_content(desired_content)
 end
 
+Then /^I should not see "(.*?)"$/ do |undesired_content|
+  page.should_not have_content(undesired_content)
+end
+
 When /^I follow "(.*?)"$/ do |link_text|
   click_link link_text
 end

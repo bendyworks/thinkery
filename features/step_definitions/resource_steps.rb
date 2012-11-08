@@ -12,3 +12,8 @@ Then /^a "(.*?)" resource should exist with content "(.*?)"$/ do |path, content|
     fail("No resource found with path '#{path}' and content #{content}")
   end
 end
+
+Then /^the "(.*?)" resource should not exist$/ do |path|
+  matching_resource = Resource.find_by_path(path)
+  matching_resource.should be_nil, "Resource with path '#{path}' still exists - deletion failed"
+end

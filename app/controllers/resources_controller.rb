@@ -32,4 +32,13 @@ class ResourcesController < ApplicationController
       render :edit
     end
   end
+
+  def destroy
+    @resource = Resource.find(params[:id])
+    if @resource.delete
+      redirect_to resources_path, notice: 'Resource successfully deleted'
+    else
+      render :edit
+    end
+  end
 end

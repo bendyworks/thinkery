@@ -18,6 +18,10 @@ When /^I press "(.*?)"$/ do |button_text|
   click_button button_text
 end
 
+Then /^"(.*?)" should (?:still )?contain "(.*?)"$/ do |field, value|
+  find_field(field).value.should == value
+end
+
 When /^I debug$/ do
   debugger
   true

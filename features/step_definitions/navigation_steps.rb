@@ -20,3 +20,7 @@ end
 Then /^I should be on the "Site Index" page$/ do
   current_path.should == resources_path
 end
+
+Then /^I should be on the "Resource Index" page$/ do
+  current_path.should == resources_path
+end

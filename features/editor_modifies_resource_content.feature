@@ -4,7 +4,7 @@ Feature: Editor Modifies Resource Content
   I want to edit the resource's content
 
   Scenario: Editor Modifies Resource Content
-    Given "/viewable" resource with content "unmodified"
+    Given "/viewable" resource with title "Viewable" and content "unmodified"
     When I am on the "/viewable" Edit page
       And I am an editor
       And I fill in "Content" with "modified"

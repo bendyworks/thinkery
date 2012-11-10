@@ -4,8 +4,8 @@ Feature: Reader Views Site Index
   I want to view the list of all resource paths
 
   Scenario: Reader Views Site Index
-    Given "/meetups" resource
-      And "/open_hack_days" resource
+    Given "/meetups" resource with title "All The Meetups"
+      And "/open_hack_days" resource with title "All the Hacks"
     When I am on the Site Index page
     Then I should see "/meetups"
       And I should see "/open_hack_days"

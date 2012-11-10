@@ -4,7 +4,7 @@ Feature: Reader Follows Link To Resource Index
   I want to be able to find, on any other page, a link to the Resource Index
 
   Scenario: Reader Follows Link to Resources Index
-    Given "/random/example" resource
+    Given "/random/example" resource with title "Just Some random Example"
     When I am on the "/random/example" Resource page
       And I follow "Resource Index"
     Then I should be on the "Resource Index" page

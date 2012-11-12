@@ -7,6 +7,9 @@ describe Resource do
   it { should validate_presence_of :title }
 
   describe 'the factory' do
+    it 'creates a valid resource' do
+      FactoryGirl.build(:resource).should be_valid
+    end
     it 'creates multiple valid resources' do
       FactoryGirl.create :resource
       FactoryGirl.create(:resource).should be_valid

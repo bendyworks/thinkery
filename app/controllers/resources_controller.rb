@@ -6,16 +6,20 @@ class ResourcesController < ApplicationController
   end
 
   def show
+    @resources = Resource.all
   end
 
   def new
+    @resources = Resource.all
     @resource = Resource.new
   end
 
   def edit
+    @resources = Resource.all
   end
 
   def create
+    @resources = Resource.all
     @resource = Resource.new(params[:resource])
     if @resource.save
       redirect_to resources_path, notice: 'Resource successfully created'
@@ -25,6 +29,7 @@ class ResourcesController < ApplicationController
   end
 
   def update
+    @resources = Resource.all
     if @resource.update_attributes (params[:resource])
       redirect_to @resource, notice: 'Resource successfully updated'
     else
@@ -33,6 +38,7 @@ class ResourcesController < ApplicationController
   end
 
   def destroy
+    @resources = Resource.all
     if @resource.delete
       redirect_to resources_path, notice: 'Resource successfully deleted'
     else

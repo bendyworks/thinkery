@@ -21,10 +21,10 @@ fi
 title "Pushing to $ENVIRONMENT heroku remote"
 if [ "$ENVIRONMENT" == "staging" ]; then
   git push -f staging develop:master
-  APP_NAME=not-suck-cms-staging
+  APP_NAME=thinkery-staging
 else
   git push production master:master
-  APP_NAME=not-suck-cms
+  APP_NAME=thinkery
 fi
 
 title "Running db:migrate for $APP_NAME on heroku"

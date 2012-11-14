@@ -3,7 +3,7 @@
     %title The Thinkery Style Guide!
   %body
     #content
-      %h1 THE THINKERY STYLE GUIDE!
+      %h1.pagetitle THE THINKERY STYLE GUIDE!
 
       #button
         %h2.title BUTTON STYLE
@@ -32,21 +32,23 @@
       #forms
         %h2.title FORM STYLE
         %form
+          %legend TITLE OF IDEA:
           %input.title{:type => "text",
                  :name => "Title",
                  :placeholder => "Title"}
+          %legend DESCRIPTION OF IDEA:
           %textarea.description{:type => "text",
                  :name => "Description",
                  :placeholder => "Put your ideas in this box!"}
 
       #fonts
         %h2.title FONTS AND PARAGRAPH STYLE
-        %h1 The Thinkery
-        %h2 The Thinkery
-        %h3 The Thinkery
-        %h4 The Thinkery
-        %h5 The Thinkery
-        %h6 The Thinkery
+        %h1 h1: The Thinkery
+        %h2 h2: The Thinkery
+        %h3 h3: The Thinkery
+        %h4 h4: The Thinkery
+        %h5 h5: The Thinkery
+        %h6 h6: The Thinkery
         %p
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et
           tincidunt elit. Quisque nunc lectus, ullamcorper posuere adipiscing

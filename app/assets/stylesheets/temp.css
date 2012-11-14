@@ -5,7 +5,7 @@ body {
 h1 {
   float: right;
   color: white;
-  font-family: sans-serif;
+  font-family: HammersmithOneRegular, sans-serif;
 }
 
 nav {
@@ -17,12 +17,14 @@ nav {
 
 #thinkery_logo {
   position: fixed;
+  height: 235px;
+  width: 235px;
 }
 
 #decorative_bar {
   background-color: black;
   height: 74px;
-  position: absolute;
+  position: fixed;
   top: 150px;
   width: 100%;
 }

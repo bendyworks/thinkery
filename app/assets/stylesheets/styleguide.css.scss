@@ -49,6 +49,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 #button {
+  height: 200px;
   button {
     color: black;
     width: 180px;
@@ -56,7 +57,7 @@
     border: 3px solid #333;
     border-radius: 15px;
     background-color: green;
-    margin: 50px auto;
+    margin: 40px auto;
     display: block;
     font-family: 'HammersmithOneRegular', Helvetic, Ariel, sans-serif;
     font-weight: bold;
@@ -130,7 +131,7 @@
     margin: 0 10px;
   }
   form {
-    margin: 10px 50px;
+    margin: 10px 80px;
     color: rgb(127, 127, 127);
     .title {
       width: 150px;
@@ -158,4 +159,19 @@
 /////////////////////////////// FONT & PARAGRAPH STYLE ///////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
 
+#fonts {
+  hgroup {
+    color: black;
+    margin: 25px;
+    text-align: center;
+    h1, h2, h3 {
+     letter-spacing: 2px;
+    }
+  }
+  p {
+    margin: 10px;
+    font-size: 14px;
+    color: black;
+  }
+}
 

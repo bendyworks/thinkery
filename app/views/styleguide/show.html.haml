@@ -1,1 +1,55 @@
-THIS IS A STYLEGUIDE FOR VIEW PAGES. REALLY.
+%html
+  %head
+    %title The Thinkery Style Guide!
+  %body
+    #content
+      %h1 THE THINKERY STYLE GUIDE!
+
+      #button
+        %h2 BUTTON STYLE
+        %button
+          ADD IDEA &nbsp; &nbsp; &nbsp; &nbsp;+
+        %button{:class => "submit"}
+          SUBMIT
+
+      #menu
+        %h2 MENU STYLE
+        %a{:href => "#"}
+          Machiensim
+        %a{:href => "#"}
+          Perpetual Motion
+        %a{:href => "#"}
+          Cats
+        %a{:href => "#"}
+          Tacosn
+
+
+      #forms
+        %h2 FORM STYLE
+        %form
+          %input{:type => "text",
+                 :name => "Title",
+                 :placeholder => "Title"}
+          %input{:type => "text",
+                 :name => "Description",
+                 :placeholder => "Put your ideas in this box!"}
+
+      #fonts
+        %h2 FONTS AND PARAGRAPH STYLE
+        %h1 The Thinkery
+        %h2 The Thinkery
+        %h3 The Thinkery
+        %h4 The Thinkery
+        %h5 The Thinkery
+        %h6 The Thinkery
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et
+          tincidunt elit. Quisque nunc lectus, ullamcorper posuere adipiscing
+          vitae, commodo quis ante. Nam blandit dignissim mattis. Nulla a
+          enim nisl, eget egestas sem. Nullam sed metus ut lorem dapibus
+          seollicitudin.
+
+      #links
+        %h2 LINK STYLE
+        %a{:href =>"#"}
+          click here

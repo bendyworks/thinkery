@@ -3,11 +3,29 @@ body {
 }
 
 h1 {
-  float: left;
+  float: right;
+  color: white;
+  font-family: sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 300px;
+  left: 0px;
+  width: 200px;
 }
 
 #thinkery_logo {
   float: left;
+}
+
+#decorative_bar {
+  background-color: black;
+  height: 74px;
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  z-index: -20;
 }
 
 #main_content {

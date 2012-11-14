@@ -9,10 +9,11 @@
   %body
     = render 'layouts/flash'
     %header
+      #decorative_bar
       %img{src:"assets/thinkerylogo.png", id:"thinkery_logo"}
       %h1
         "The best ideas on the web!"
-    = link_to('Resource Index', resources_path)
+    //= link_to('Resource Index', resources_path)
     %nav
       = render 'layouts/navlinks'
     #main_content

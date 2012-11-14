@@ -1,3 +1,54 @@
-// Place all the styles related to the styleguide controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+#content {
+  background: rgb(0, 133, 188);
+  font-family: Helvetic, Ariel, sans-serif;
+  h1 {
+    margin: 0 auto;
+    display: block;
+    height: 100px;
+    width: 700px;
+    line-height: 100px;
+    color: rgb(46, 49, 146);
+  }
+}
+
+#button, #forms, #menu, #fonts, #links {
+  background: white;
+  border: thick solid black;
+  width: 700px;
+  height: 300px;
+  margin: 20px auto;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+#button {
+  button{
+    color: black;
+    width: 180px;
+    height: 40px;
+    border: 3px solid #333;
+    border-radius: 15px;
+    background-color: green;
+    margin: 50px auto;
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    text-shadow: 1px 1px #ffffff;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #d9e021 40%, #d9e021 59%, #9fe092 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(40%,#d9e021), color-stop(59%,#d9e021), color-stop(100%,#9fe092)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#d9e021 40%,#d9e021 59%,#9fe092 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#d9e021 40%,#d9e021 59%,#9fe092 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#d9e021 40%,#d9e021 59%,#9fe092 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#d9e021 40%,#d9e021 59%,#9fe092 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#9fe092',GradientType=0 ); /* IE6-9 */
+  }
+  .submit {
+      font-size: 17px;
+  }
+}

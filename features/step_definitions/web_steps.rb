@@ -10,6 +10,10 @@ Then /^I should see the navbar$/ do
   page.should have_xpath('//nav/ul')
 end
 
+Then /^I should see the page header$/ do
+  page.should have_xpath('//body/header')
+end
+
 When /^I follow "(.*?)"$/ do |link_text|
   click_link link_text
 end

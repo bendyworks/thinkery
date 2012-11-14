@@ -7,11 +7,4 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    = render 'layouts/flash'
-    %header
-      %h1
-        "The best ideas on the web!"
-    = link_to('Resource Index', resources_path)
-    %nav
-      = render 'layouts/navlinks'
     = yield

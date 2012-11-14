@@ -3,10 +3,51 @@
     %title The Thinkery Style Guide!
   %body
     #content
+      %h1 The Thinkery Style Guide!
 
       #button
-        %h1 Button Style
-          %button.action
+        %h2 Button Style
+        %button.action
+          Submit
 
       #menu
+        %h2 Menu Style
+        %a{:href => "#"}
+          Machiensim
+        %a{:href => "#"}
+          Perpetual Motion
+        %a{:href => "#"}
+          Cats
+        %a{:href => "#"}
+          Tacosn
 
+
+      #forms
+        %h2 Form Style
+        %form
+          %input{:type => "text",
+                 :name => "Title",
+                 :placeholder => "Title"}
+          %input{:type => "text",
+                 :name => "Description",
+                 :placeholder => "Put your ideas in this box!"}
+
+      #fonts
+        %h2 Fonts and Paragraph Style
+        %h1 The Thinkery
+        %h2 The Thinkery
+        %h3 The Thinkery
+        %h4 The Thinkery
+        %h5 The Thinkery
+        %h6 The Thinkery
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et
+          tincidunt elit. Quisque nunc lectus, ullamcorper posuere adipiscing
+          vitae, commodo quis ante. Nam blandit dignissim mattis. Nulla a
+          enim nisl, eget egestas sem. Nullam sed metus ut lorem dapibus
+          seollicitudin.
+
+      #links
+        %h2 Link Style
+        %a{:href =>"#"}
+          click here

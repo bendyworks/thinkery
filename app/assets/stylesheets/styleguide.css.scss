@@ -18,13 +18,15 @@
 #content {
   background: rgb(0, 133, 188);
   font-family: 'HammersmithOneRegular', Helvetic, Ariel, sans-serif;
-  h1 {
+  h1.pagetitle {
     margin: 0 auto;
     display: block;
     height: 100px;
     width: 700px;
     line-height: 100px;
     color: white;
+    text-align: center;
+    font-size: 50px;
   }
 }
 
@@ -43,8 +45,11 @@
   }
 }
 
+////////////////////////////// BUTTON STYLE //////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
 #button {
-  button{
+  button {
     color: black;
     width: 180px;
     height: 40px;
@@ -65,11 +70,24 @@
     background: -ms-linear-gradient(top,  #ffffff 0%,#d9e021 40%,#d9e021 59%,#9fe092 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #ffffff 0%,#d9e021 40%,#d9e021 59%,#9fe092 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#9fe092',GradientType=0 ); /* IE6-9 */
+    &:hover {
+      background: #ffffff; /* Old browsers */
+      background: -moz-linear-gradient(top,  #ffffff 0%, #d9ef97 50%, #afedb5 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#d9ef97), color-stop(100%,#afedb5)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  #ffffff 0%,#d9ef97 50%,#afedb5 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  #ffffff 0%,#d9ef97 50%,#afedb5 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  #ffffff 0%,#d9ef97 50%,#afedb5 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  #ffffff 0%,#d9ef97 50%,#afedb5 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#afedb5',GradientType=0 ); /* IE6-9 */
+    }
   }
   .submit {
-      font-size: 17px;
+    font-size: 17px;
   }
 }
+
+///////////////////////////////// MENU STYLE ///////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
 
 #menu {
    ul {
@@ -102,16 +120,27 @@
   }
 }
 
+/////////////////////////// FORMS STYLE ////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+
+
 #forms {
+  height: 400px;
+  legend {
+    margin: 0 10px;
+  }
   form {
+    margin: 10px 50px;
+    color: rgb(127, 127, 127);
     .title {
-      width: 100px;
+      width: 150px;
       height: 40px;
       background-color: rgb(242, 242, 242);
       border-radius: 5px;
       border: 2px solid #ccc;
       box-shadow: inset 0px 0px 7px 1px rgba(0, 0 ,0, 0.6);
       padding: 0 10px;
+      margin: 0 0 15px 10px;
     }
     .description {
       width: 500px;
@@ -120,7 +149,13 @@
       border-radius: 5px;
       border: 2px solid #ccc;
       box-shadow: inset 0px 0px 7px 1px rgba(0, 0 ,0, 0.6);
-      padding: 0 10px;
+      margin: 0 0 15px 10px;
+      padding: 10px;
     }
   }
 }
+
+/////////////////////////////// FONT & PARAGRAPH STYLE ///////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+

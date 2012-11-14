@@ -16,7 +16,7 @@ nav {
 }
 
 #thinkery_logo {
-  float: left;
+  position: fixed;
 }
 
 #decorative_bar {
@@ -25,17 +25,17 @@ nav {
   position: absolute;
   top: 150px;
   width: 100%;
-  z-index: -20;
 }
 
 #main_content {
   position: absolute;
-  top: 200px;
+  top: 90px;
   left: 200px;
   right: 80px;
   height: 100%;
 
   background-color: white;
   border-style: solid;
-  border-thickness: 6px;
+  border-width: 10px;
+  z-index: -20;
 }

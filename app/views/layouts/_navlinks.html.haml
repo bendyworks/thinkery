@@ -1,5 +1,6 @@
 %ul
+  %button
+    = link_to "Add Idea", new_resource_path
   - @resources.each do |resource|
     %li
-      = link_to resource.path, resource
-  = link_to "Add Resource", new_resource_path
+      = link_to resource.title, resource

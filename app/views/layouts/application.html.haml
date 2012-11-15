@@ -9,12 +9,15 @@
   %body
     = render 'layouts/flash'
     %header
+      %img{src:"/assets/thinkerylogo_glow.png", id:"thinkery_logo_glow"}"
+      %h1#main_title
+        The Thinkery
       #decorative_bar
-      %img{src:"assets/thinkerylogo.png", id:"thinkery_logo"}
-      %h1
-        "The best ideas on the web!"
-    //= link_to('Resource Index', resources_path)
-    %nav
+      = link_to(image_tag('thinkerylogo.png', id:"thinkery_logo"), resources_path)
+      #slogan
+        "The best thoughts on the web!"
+    //
+    %nav.menu
       = render 'layouts/navlinks'
-    #main_content
+    #main_content.content
       = yield

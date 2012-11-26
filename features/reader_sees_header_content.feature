@@ -8,7 +8,7 @@ Feature: Reader sees Header content on all pages
     Then I should see the page header
 
   Scenario: Reader Sees Header content on "/meetups" resource page
-    Given "/meetups" resource with title "All The Meetups"
+    Given "/meetups" resource with title "All the Meetups"
     When I am on the Site Index page
-    And I follow "/meetups" link
+    And I follow "All the Meetups" link
     Then I should see the page header

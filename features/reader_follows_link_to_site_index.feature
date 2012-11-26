@@ -6,5 +6,5 @@ Feature: Reader Follows Link To Resource Index
   Scenario: Reader Follows Link to Resources Index
     Given "/random/example" resource with title "Just Some random Example"
     When I am on the "/random/example" Resource page
-      And I follow "Resource Index"
+      And I follow "home_link"
     Then I should be on the "Resource Index" page

@@ -3,4 +3,4 @@
     = link_to "Add Idea", new_resource_path
   - @resources.each do |resource|
     %li
-      = link_to resource.title, resource
+      = link_to resource.title, url_for(resource)

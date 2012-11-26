@@ -2,7 +2,7 @@ Given /^"(.*?)" resource with title "(.*?)"$/ do |path, title|
   FactoryGirl.create :resource, path: path, title: title
 end
 
-Given /^"(.*?)" resource with content "(.*?)" and title "(.*?)"$/ do |path, title, content|
+Given /^"(.*?)" resource with content "(.*?)" and title "(.*?)"$/ do |path, content, title|
   FactoryGirl.create :resource, path: path, title: title, content: content
 end
 

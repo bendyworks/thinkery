@@ -117,8 +117,6 @@ button {
       line-height: 20px;
       vertical-align: baseline;
       margin: 0;
-      padding-top: 10px;
-      padding-bottom: 5px;
       text-align: center;
       border-bottom: 3px solid #54D1FC;
       &:first-child {
@@ -129,6 +127,8 @@ button {
         color: #cccccc;
         text-transform: uppercase;
         display: block;
+        padding-top: 10px;
+        padding-bottom: 5px;
         &:hover {
           color: rgb(217, 224, 33);
           background-color: rgb(41, 171, 226);

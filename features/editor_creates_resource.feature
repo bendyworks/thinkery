@@ -5,7 +5,7 @@ Feature: Editor creates resource
 
   Scenario: Editor creates resource
     Given I am on the Site Index page
-      And I follow "Add Idea"
+      And I press "Add Idea"
     When I fill in "Path" with "/sample"
       And I fill in "Title" with "Sample Fruit"
       And I fill in "Content" with "Grapefruit"

@@ -44,8 +44,8 @@ nav button {
 }
 
 .flash {
-  /* relative position to activate z-index */
-  position: relative;
+  /* fixed position to activate z-index */
+  position: fixed;
   z-index: 100;
   margin-top: 170px;
   margin-left: 30%;

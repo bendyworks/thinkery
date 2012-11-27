@@ -43,6 +43,19 @@ nav button {
   color: white;
 }
 
+.flash {
+  /* relative position to activate z-index */
+  position: relative;
+  z-index: 100;
+  margin-top: 170px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: thin solid black;
+  background-color: rgb(200, 240, 255);
+  font-size: 20px;
+  padding: .8em 2em;
+}
+
 
 h1#main_title {
   border-style: none;

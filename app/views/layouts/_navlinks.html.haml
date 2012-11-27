@@ -1,5 +1,7 @@
 %ul
-  = button_to "Add Idea", new_resource_path, method: 'get'
+  // id added to support feature test steps. Don't mess with it
+  // unless you fix the steps that call out "Add Idea" in the scenarios
+  = button_to "Add Idea      +", new_resource_path, method: 'get', id: 'Add Idea'
   - @resources.each do |resource|
     %li
       = link_to resource.title, url_for(resource)

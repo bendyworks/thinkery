@@ -1,11 +1,9 @@
-%dl
-  %dt
-    %dfn
-      = @resource.path
-      (title:
-      = @resource.title
-      )
-  %dd
-    = @resource.content
-%p
+%h2
+  = @resource.title
+.path_holder
+  index path:
+  = @resource.path
+.content_text
+  = @resource.content
+.link_holder
   = link_to 'Edit', edit_resource_path(@resource)

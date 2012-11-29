@@ -2,15 +2,17 @@
   = f.error_messages
 
   .field
-    = f.label :path
-    = f.text_field :path
+    =f.label :path
+    =f.text_field :path
 
   .field
-    = f.label :title
+    = f.label :title, 'Title of Idea'
+    %br
     = f.text_field :title
 
   .field
     = f.label :content
+    %br
     = f.text_area :content, cols: 80
 
   .actions

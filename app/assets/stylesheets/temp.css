@@ -99,4 +99,20 @@ h1#main_title {
   padding-top: 200px;
   padding-right: 40px;
   padding-left: 40px;
+  font-size: 18px;
+}
+
+.content_text {
+  color: #101010;
+  white-space: pre-wrap;
+}
+
+.path_holder, .link_holder {
+  margin: 20px 0
+}
+
+.path_holder {
+  color: #606060;
+  font-style: italic;
+  font-size: 15px;
 }

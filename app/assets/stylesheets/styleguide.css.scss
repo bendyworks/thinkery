@@ -59,7 +59,7 @@
 }
 
 button, input[type="submit"] {
-  margin: auto;
+  margin-left: 20px;
   color: black;
   width: 180px;
   height: 40px;
@@ -110,6 +110,11 @@ button, input[type="submit"] {
    button, input[type="submit"] {
     margin-top: 30px;
     margin-bottom: 10px;
+    width: 150px;
+    margin-left: 10px;
+   }
+   form {
+    margin-left: 20px;
    }
    ul {
     list-style-type: none;
@@ -150,29 +155,29 @@ button, input[type="submit"] {
   legend {
     margin: 0 10px;
   }
-  form {
-    margin: 10px 80px;
-    color: rgb(127, 127, 127);
-    .title {
-      width: 150px;
-      height: 40px;
-      background-color: rgb(242, 242, 242);
-      border-radius: 5px;
-      border: 2px solid #ccc;
-      box-shadow: inset 0px 0px 7px 1px rgba(0, 0 ,0, 0.6);
-      padding: 0 10px;
-      margin: 0 0 15px 10px;
-    }
-    .description {
-      width: 500px;
-      height: 200px;
-      background-color: rgb(242, 242, 242);
-      border-radius: 5px;
-      border: 2px solid #ccc;
-      box-shadow: inset 0px 0px 7px 1px rgba(0, 0 ,0, 0.6);
-      margin: 0 0 15px 10px;
-      padding: 10px;
-    }
+}
+form {
+  margin: 10px 80px;
+  color: rgb(127, 127, 127);
+  .title {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    box-shadow: inset 0px 0px 7px 1px rgba(0, 0 ,0, 0.6);
+    padding: 0 10px;
+    margin: 0 0 15px 10px;
+  }
+  .description {
+    width: 500px;
+    height: 200px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    box-shadow: inset 0px 0px 7px 1px rgba(0, 0 ,0, 0.6);
+    margin: 0 0 15px 10px;
+    padding: 10px;
   }
 }
 

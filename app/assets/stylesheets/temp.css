@@ -59,6 +59,35 @@ nav button {
   padding: .8em 2em;
 }
 
+.errorExplanation {
+  position: relative;
+  width: 495px;
+  margin-bottom: 30px;
+  border: thin solid black;
+  color: #101010;
+  background-color: white;
+  -moz-box-shadow:    inset 0 0 10px rgb(227, 112, 19);
+  -webkit-box-shadow: inset 0 0 10px rgb(227, 112, 19);
+  box-shadow:         inset 0 0 10px rgb(227, 112, 19);
+  font-size: 20px;
+  padding: .8em 2em;
+}
+
+.errorExplanation h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.errorExplanation p {
+  margin-bottom: 15px;
+}
+
+.errorExplanation li {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
 
 h1#main_title {
   border-style: none;
